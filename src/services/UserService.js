@@ -21,4 +21,11 @@ export default class UserService {
     const { data } = await $api.get(`${DOMAIN_URL}/user`);
     return data.user;
   }
+
+  static async update(updateUserDto) {
+    const { data } = await $api.put(`${DOMAIN_URL}/user`, {
+      user: updateUserDto,
+    });
+    return data.user;
+  }
 }

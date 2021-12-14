@@ -26,22 +26,6 @@ export default {
       articles,
     };
   },
-  // data: () => ({
-  //   articles: null,
-  // }),
-  // methods: {
-  //   async fetchArticles() {
-  //     try {
-  //       this.articles = await ArticleService.findAll();
-  //     } catch (error) {
-  //       console.log(error);
-  //     }
-  //   },
-  // },
-  //
-  // mounted() {
-  //   this.fetchArticles();
-  // },
 };
 </script>
 

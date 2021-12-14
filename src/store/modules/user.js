@@ -59,6 +59,15 @@ const actions = {
       console.log(error);
     }
   },
+
+  async update({commit}, updateUserDto) {
+    try {
+      const user = await UserService.update(updateUserDto);
+      commit("setUser", user);
+    } catch (error) {
+      console.log(error);
+    }
+  }
 };
 
 export default {
